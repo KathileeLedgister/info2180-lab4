@@ -13,9 +13,24 @@ and open the template in the editor.
         <script src="app.js"></script>
     </head>
     <body>
-        <div>
-            <h1>Avengers Character Search</h1>
-            <button class="btn" id="btnquery">Search</button>
+        <header class="header">
+            <div class="container">
+                <h1>AVENGERS CHARACTER SEARCH</h1>
+            </div>
+        </header>
+        <div class="container">
+            <h3 class="srchtitle">Search by Full Name or Alias</h3>
+            <form class="querysearch">
+                <input id="textInput" class="querytext" size="50" placeholder="e.g. Captain America or Steve Rogers" pattern="[a-zA-Z\s]{0,40}">
+                <button class="btn" id="btnquery">Search</button>           
+            </form> 
+            <h1>RESULT</h1>
+            <div class="partition"></div>
+            <div id="svresult" class="result">
+            </div>
         </div>
+
+
+
     </body>
 </html>
